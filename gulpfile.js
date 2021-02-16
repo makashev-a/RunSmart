@@ -21,7 +21,9 @@ gulp.task('styles', function() {
             prefix: "",
             suffix: ".min",
         }))
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
