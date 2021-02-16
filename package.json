@@ -7,9 +7,6 @@
   },
   "author": "Akhmadi",
   "license": "ISC",
-  "browserslist": [
-    "last 2 versions"
-  ],
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
@@ -19,6 +16,12 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0"
   },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
   "dependencies": {},
   "description": "RunSmart Project"
 }
