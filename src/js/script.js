@@ -22,6 +22,7 @@ const slider = tns({
     speed: 1200,
     controls: false,
     nav: false,
+    preventScrollOnTouch: 'auto'
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
