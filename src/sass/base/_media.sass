@@ -3,6 +3,13 @@
         background-position: 20% 0
         &__wrapper
             align-items: center
+    .carousel
+        width: 720px
+        margin: 0 auto
+        &__inner
+            width: 720px
+            img
+                width: 100%
 
 @media (max-width: 991px)
     .container
@@ -15,6 +22,22 @@
             margin-top: 28px
         &__text
             margin-top: 22px
+    .consultation
+        padding: 85px 0 80px 0
+        &__descr
+            margin-top: 60px
+            text-align: center
+        .feedback-form
+            margin: 20px auto 0 
+    .title
+        &_left
+            text-align: center
+    .carousel
+        padding: 65px 0
+        width: 540px
+        margin: 0 auto
+        &__inner
+            width: 540px
 
 @media (max-width: 767px)
     .container
@@ -52,9 +75,19 @@
             margin-top: 10px   
         &__text
             margin-top: 14px 
+    .consultation
+        min-height: 600px
+        padding: 65px 0 60px 0
+        &__descr
+            margin-top: 40px
+            font-size: 18px
     .title
         font-size: 28px
-
+    .carousel
+        width: 430px
+        margin: 0 auto
+        &__inner
+            width: 430px
 @media (max-width: 575px)
     .container
         max-width: none
@@ -80,14 +113,14 @@
         &__icon
             font-size: 12px
             img
-                width: 50%
+                width: 40%
         &__link
             margin-top: 6px
             font-size: 14px
     .button
         &_main
-            width: 250px
-            height: 45px
+            width: 270px
+            height: 50px
             margin-top: 30px
             font-size: 14px
     .advantages
@@ -101,10 +134,32 @@
         &__text
             margin-top: 8px
             font-size: 13px
+    .consultation
+        min-height: 500px
+        padding: 45px 0 40px 0
+        &__descr
+            margin-top: 20px
+            font-size: 16px
     .title
         font-size: 24px
+    .carousel
+        padding: 40px 0
+        width: 340px
+        margin: 0 auto
+        &__inner
+            width: 340px
+            img
+                width: 290px
+        .prev
+            left: -20px
+            img
+                width: 21px
+        .next
+            right: -20px
+            img
+                width: 21px
 
-@media (max-width: 409px)
+@media (max-width: 380px)
     .header
         &__logo
             width: 155px
@@ -121,20 +176,20 @@
         &__header
             font-size: 24px
         &__subheader
-            font-size: 14px
+            font-size: 13px
         &__icons
             width: 290px
         &__icon
             font-size: 10px
             img
+                width: 35%
                 margin-bottom: 10px
         &__link
             font-size: 12px
     .button
         &_main
-            width: 200px
-            height: 38px
-            font-size: 12px
+            width: 220px
+            height: 45px
     .title
         font-size: 16px
     .advantages
@@ -152,3 +207,29 @@
             display: none
             &_short
                 display: block
+    .consultation
+        min-height: 400px
+        padding: 25px 0 20px 0
+        &__descr
+            font-size: 14px
+        .feedback-form
+            width: 270px
+            input
+                height: 45px
+            .button_submit
+                height: 50px
+    .carousel
+        width: 300px
+        margin: 0 auto
+        &__inner
+            width: 300px
+            img
+                width: 230px
+        .prev
+            left: -15px
+            img
+                width: 21px
+        .next
+            right: -15px
+            img
+                width: 21px
