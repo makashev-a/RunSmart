@@ -1,3 +1,5 @@
+//Slider
+
 const slider = tns({
   container: '.carousel__inner',
   items: 1,
@@ -15,6 +17,8 @@ document.querySelector('.prev').addEventListener('click', function () {
 document.querySelector('.next').addEventListener('click', function () {
   slider.goTo('next');
 });
+
+// Tabs 
 
 $(document).ready(function () {
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
@@ -61,4 +65,30 @@ $(document).ready(function () {
     });
   });
 
+  // Validation
+
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Пожалуйста, введите свое имя",
+        phone: "Пожалуйста введите свой номер телефона",
+        email: {
+          required: "Пожалуйста, введите свой почту",
+          email: "Неправильно введен адрес почты"
+        }
+      }
+    });
+  }
+
+  validateForms('#consultation-form');
+  validateForms('#consultation form');
+  validateForms('#order form');
 });
