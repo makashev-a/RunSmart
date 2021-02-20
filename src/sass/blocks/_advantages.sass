@@ -7,7 +7,7 @@
         display: flex
         justify-content: center
         align-items: flex-start
-    &__icon
+    &__item
         width: 33%
         display: flex
         flex-direction: column
@@ -33,4 +33,17 @@
             text-decoration: underline
         &_short
             display: none
+    &__icon
+        &_heartbeating
+            animation: heartbeating 1.6s ease infinite
+            &:hover
+                animation-play-state: paused
+        &_cup
+            animation: cup 1.6s linear infinite
+            &:hover
+                animation-play-state: paused
+        &_run
+            animation: run 1.6s linear infinite
+            &:hover
+                animation-play-state: paused
 

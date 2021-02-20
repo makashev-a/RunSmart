@@ -14,7 +14,7 @@
 
 <body>
 
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
 
             <header class="header">
@@ -70,8 +70,8 @@
             <h2 class="title">наши преимущества</h2>
 
             <div class="advantages__icons">
-                <div class="advantages__icon">
-                    <img src="icons/first_section/1.png" alt="cup">
+                <div class="advantages__item">
+                    <img src="icons/first_section/1.png" alt="cup" class="advantages__icon advantages__icon_cup">
                     <div class="advantages__descr">
                         <div class="advantages__title">
                             Делимся опытом
@@ -84,8 +84,8 @@
                             так как сами бегают полумарафоны!</div>
                     </div>
                 </div>
-                <div class="advantages__icon">
-                    <img src="icons/first_section/2.png" alt="heart-pulse">
+                <div class="advantages__item">
+                    <img src="icons/first_section/2.png" alt="heart-pulse" class="advantages__icon advantages__icon_heartbeating">
                     <div class="advantages__descr">
                         <div class="advantages__title">
                             Заботимся о здоровье
@@ -98,8 +98,8 @@
                             чтобы Ваши занятия спортом шли на пользу Вашему здоровью!</div>
                     </div>
                 </div>
-                <div class="advantages__icon">
-                    <img src="icons/first_section/3.png" alt="foot">
+                <div class="advantages__item">
+                    <img src="icons/first_section/3.png" alt="foot" class="advantages__icon advantages__icon_run">
                     <div class="advantages__descr">
                         <div class="advantages__title">
                             Учим бегать
@@ -923,6 +923,10 @@
         </div>
 
     </div> <!-- overlay -->
+
+    <a href="#up" class="page-up">
+        <img src="icons/chevron-circle-up.svg" alt="up">
+    </a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
