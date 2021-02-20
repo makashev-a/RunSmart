@@ -1,6 +1,7 @@
 {
   "name": "runsmart",
   "version": "1.0.0",
+  "description": "RunSmart Project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,21 +9,21 @@
   "author": "Akhmadi",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.2.4",
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "postcss": "^8.2.6"
   },
   "browserslist": [
     "defaults",
     "not IE 11",
     "maintained node versions"
-  ],
-  "dependencies": {},
-  "description": "RunSmart Project"
+  ]
 }

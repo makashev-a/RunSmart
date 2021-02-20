@@ -2,7 +2,8 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
 const rename = require("gulp-rename");
-const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
 const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
@@ -28,7 +29,7 @@ gulp.task('styles', function () {
             suffix: '.min',
             prefix: ''
         }))
-        .pipe(autoprefixer())
+        .pipe(postcss([autoprefixer()]))
         .pipe(cleanCSS({
             compatibility: 'ie8'
         }))
